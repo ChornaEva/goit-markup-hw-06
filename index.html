@@ -384,7 +384,7 @@
                 <div class="subscription">
                     <h2 class="subscription-title title">Подпишитесь на рассылку</h2>
                     <form name="subscription-form">
-                        <label for="user-email">
+                        <label for="email">
                             <input class="footer-input" type="email" name="email" placeholder="E-mail"/>
                         </label>                                        
                         <button class="footer-submit-button" type="submit">Подписаться
@@ -403,12 +403,12 @@
                         <use href="./images/svg/symbol-defs.svg#icon-close"></use>
                     </svg>
                 </button>
-                <form class="" action="#">
-                    <div class="modal-form">
-                        <h2 class="modal-form-title title">Оставьте свои данные, мы вам перезвоним</h2>
+                <form class="modal-form" action="#">
+                    <div class="modal-user-form">
+                        <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
                         <label class="modal-form-type" for="user-name"> Имя
                             <span class="modal-form-box">
-                                <input class="modal-form-input" type="text" name="user-name" required>
+                                <input class="modal-form-input" type="text" name="user-name" minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы латиницы или кирилицы" required>
                                 <svg class="modal-form-icon" width="18px" height="18px">
                                     <use href="./images/svg/symbol-defs.svg#icon-user"></use>
                                 </svg>
@@ -416,7 +416,7 @@
                         </label>
                         <label class="modal-form-type" for="phone-number"> Телефон
                             <span class="modal-form-box">
-                                <input class="modal-form-input" type="tel" name="phone-number" required>
+                                <input class="modal-form-input" type="tel" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="000-000-00-00" required>
                                 <svg class="modal-form-icon" width="18px" height="18px">
                                     <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
                                 </svg>
@@ -435,12 +435,15 @@
                                 <textarea class="modal-form-feedback" name="text" placeholder="Введите текст"></textarea>
                             </span>
                         </label>
-                        <label class="modal-form-type" for="rules">
-                            <input class="modal-form-agree" type="checkbox" name="rules" value="agree" checked />
+                        <label class="modal-form-type input-label" for="modal-checkbox">
+                            <input class="modal-form-checkbox visually-hidden" type="checkbox" id="modal-checkbox" checked/>
+                            <span class="checkbox-box"></span>
+                            <span class="modal-form-text">
+                                <span class="modal-form-link">Соглашаюсь с рассылкой и принимаю
+                                    <a class="contract-link" href="Условия договора">Условия договора</a>
+                                </span>
+                            </span>
                         </label>
-                        <p class="modal-form-link">Соглашаюсь с рассылкой и принимаю
-                            <a class="contract-link" href="Условия договора">Условия договора</a>
-                        </p>
                         <button class="modal-submit-button" type="submit">Отправить</button>
                     </div>
                 </form>
