@@ -363,7 +363,7 @@ img {
 }
 
 .modal-form-type {
-  margin-bottom: 4px;
+  display: block;
 
   font-size: 12px;
   line-height: 1.16;
@@ -393,6 +393,7 @@ img {
   border-radius: 4px;
 
   padding-left: 42px;
+  margin-top: 4px;
   outline: none;
 }
 
@@ -416,6 +417,8 @@ img {
   outline: none;
   resize: none;
 
+  margin-top: 4px;
+
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -436,6 +439,7 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  padding-left: 14px;
 }
 
 .checkbox-box {
@@ -443,8 +447,6 @@ img {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-
-  margin-left: 14px;
 }
 
 .modal-form-checkbox:checked + .checkbox-box {
@@ -702,6 +704,7 @@ img {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-item:not(:last-child) {
@@ -757,7 +760,6 @@ img {
   color: #ffffff;
 
   margin-bottom: 20px;
-  padding-top: 12px;
 }
 
 .sociale-link-dark {
@@ -781,7 +783,6 @@ img {
   color: #ffffff;
 
   margin-bottom: 20px;
-  padding-top: 12px;
 }
 
 .footer-input {
